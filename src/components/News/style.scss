@@ -8,6 +8,8 @@ section.notice{
 
     padding: 10px;
 
+    border-left: 5px solid #2180a7;
+
     .notice-list{
         @include flex(row, center);
         img{
