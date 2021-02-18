@@ -1,0 +1,13 @@
+@mixin flex($direction, $justify){
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin font($size, $color){
+    text-decoration: none;
+    font-size: $size;
+    font-family: 'Open Sans',-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;
+    color: $color;
+}

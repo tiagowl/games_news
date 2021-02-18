@@ -1,0 +1,23 @@
+@import '../../scss/mixins';
+
+section.primary{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(240, 238, 238);
+    border-bottom: solid 1px rgb(213, 212, 212);
+    @include flex(row, center);
+    z-index: 1000;
+    
+    ul{
+        @include flex(row, center);
+        max-width: 1000px;
+        flex-wrap: wrap;
+        img{
+            height: 170px;
+            max-width: 300px;
+            background-repeat: no-repeat;
+            margin-right: 5px;
+        }
+    }
+    
+}

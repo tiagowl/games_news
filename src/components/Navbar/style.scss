@@ -1,0 +1,25 @@
+@import '../../scss/mixins';
+
+header{
+    @include flex(row, center);
+    background-color: #2180a7;
+    height: 70px;
+    width: 100%;
+    box-shadow: 1px 1px rgb(186, 185, 185);
+}
+
+nav{
+    @include flex(row, space-between);
+    min-width: 800px;
+    a{
+        text-decoration: none;
+        @include font(30px, white);
+    }
+    ul{
+        @include flex(row, center);
+        @include font(12px, white);
+        li{
+            margin-left: 25px;
+        }
+    }
+}
