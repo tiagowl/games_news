@@ -1,0 +1,29 @@
+@import '../../scss/mixins';
+@import '../../scss/variables';
+
+footer{
+    background-color: $primary-color;
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include flex(row, center);
+
+    ul{
+        border-right: 0.2px solid white;
+        @include flex(column, center);
+        padding-right: 15px;
+        margin-right: 40px;
+
+        .title{
+            margin-bottom: 13px;
+            @include font(0.7rem, rgb(141, 141, 221));
+            font-weight: bold;
+        }
+
+        li{
+            @include font(1.0rem, white);
+            margin-bottom: 8px;
+        }
+    }
+}

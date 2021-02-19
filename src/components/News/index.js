@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.scss';
 import api from '../../services/api';
+import { TiMessage, TiTime } from "react-icons/ti";
 
 // import { Container } from './styles';
 
@@ -20,6 +21,8 @@ function News() {
 
     }, []);
 
+    let iconStyles = { fontSize: "1.0rem", marginRight: "8px" }
+
   return(
       <section className="notice" >
           {games.map(game=> (
@@ -28,6 +31,11 @@ function News() {
                     <div className="notice-text" >
                         <h1 className="text-title" >{game.title}</h1>
                         <p className="text-description" >{game.description}</p>
+                        <ul>
+                            <li>por <span class="information" >João Vitor Arouca</span></li>
+                            <li><TiTime style={iconStyles}/><span class="information" >5 minutos atrás</span></li>
+                            <li><TiMessage style={iconStyles} /><span class="information" >0 comentários</span></li>
+                        </ul>
                     </div>
               </div>
           ))}

@@ -7,6 +7,13 @@ section.primary{
     border-bottom: solid 1px rgb(213, 212, 212);
     @include flex(row, center);
     z-index: 1000;
+
+    .main-notice{
+        background-image: url("../../assets/img/pes2020.jpg");
+        height: 200px;
+        max-width: 200px;
+        background-size: cover;
+    }
     
     ul{
         @include flex(row, center);
