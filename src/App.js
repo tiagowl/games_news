@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Main from './pages/Main';
+import Notice from './pages/Notice';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Navbar/>
       <BrowserRouter>
         <Switch>
-          <Route path="/" component={Main}  />
+          <Route path="/" exact component={Main}  />
+          <Route  path="/notice?index=:index" component={Notice}  />
         </Switch>
       </BrowserRouter>
       <Footer/>
