@@ -30,7 +30,7 @@ function News() {
               <div className="notice-list" key={game.id} >
                 <img src={game.imageUrl} alt="game-image"/>
                     <div className="notice-text" >
-                        <h1 className="text-title" ><Link to={`/notice?index=${index}`} >{game.title}</Link></h1>
+                        <h1 className="text-title" ><Link to={`/notice/${index}`} >{game.title}</Link></h1>
                         <p className="text-description" >{game.description}</p>
                         <ul>
                             <li>por <span className="information" >João Vitor Arouca</span></li>

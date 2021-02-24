@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/" exact component={Main}  />
-          <Route  path="/notice?index=:index" component={Notice}  />
+          <Route  path="/notice/:index" component={Notice}  />
         </Switch>
       </BrowserRouter>
       <Footer/>
